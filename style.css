@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Garamond, serif;
+    letter-spacing: 0.05em;
+    
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 130px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #992d29;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    position:relative;
+    float: left;
+    top:50%;
+    text-align: left;
+    color: #fff;
+    flex: 1;
+}
+.content h1{
+    font-size: 70px;
+    margin-bottom: 30px;
+    
+}
+.content p{
+    margin-right: 60px;
+    font-weight: 50;
+    line-height: 30px;
+}
+
+.intro{
+     font-size: 27px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid #992d29;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 0 0 #992d29;
+    transition: ease-out 0.3s;
+}
+
+button:hover{
+    box-shadow: inset 200px 0 0 0 #992d29;
+}
+
+.container{
+  display: flex;
+  width: 85%;
+  margin: auto;
+  align-self: center;
+}
+
+.me {
+  flex: 1;
+  position: relative;
+  float: left;
+}
+.headshot{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  border-radius: 20px;
+}
+.connecttitle{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+.logos{
+    display:flex;
+    width: 40%;
+    margin: auto;
+    justify-content:center;
+}
+.linkedlogo {
+    border-radius: 50%;
+    margin: 50px;
+    width: 120px;
+    height: 120px;
+    background-image: url(linked.png);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    transition: ease-out 0.2s;
+}
+.linkedlogo:hover {
+    width: 120px;
+    height: 120px;
+    background-image: url(hoverlinked.png);
+}
+
+.emaillogo {
+    border-radius: 50%;
+    margin: 50px;
+    width: 120px;
+    height: 120px;
+    background-image: url(email.png); 
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    transition: ease-out 0.2s;
+}
+.emaillogo:hover {
+    width: 120px;
+    height: 120px;
+    background-image: url(hoveremail.png);
+}
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.profile{
+}
+
+table {
+  width: 60%;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+td:nth-child(1) {
+    font-size: 30px;
+    width:32%
+}
+tr {
+    height: 52px;
+}
+.summary{
+    font-size: 55px;
+}
